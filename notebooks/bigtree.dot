@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<one_hot__polyuria_Yes &le; 0.5<br/>gini = 0.473<br/>samples = 416<br/>value = [160, 256]<br/>class = Diabetes>, fillcolor="#b5daf5"] ;
+1 [label=<one_hot__gender_Male &le; 0.5<br/>gini = 0.424<br/>samples = 210<br/>value = [146, 64]<br/>class = No Diabetes>, fillcolor="#f0b890"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<one_hot__alopecia_Yes &le; 0.5<br/>gini = 0.411<br/>samples = 52<br/>value = [15, 37]<br/>class = Diabetes>, fillcolor="#89c5f0"] ;
+1 -> 2 ;
+3 [label=<gini = 0.219<br/>samples = 40<br/>value = [5, 35]<br/>class = Diabetes>, fillcolor="#55abe9"] ;
+2 -> 3 ;
+4 [label=<gini = 0.278<br/>samples = 12<br/>value = [10, 2]<br/>class = No Diabetes>, fillcolor="#ea9a61"] ;
+2 -> 4 ;
+5 [label=<one_hot__polydipsia_Yes &le; 0.5<br/>gini = 0.283<br/>samples = 158<br/>value = [131, 27]<br/>class = No Diabetes>, fillcolor="#ea9b62"] ;
+1 -> 5 ;
+6 [label=<gini = 0.15<br/>samples = 135<br/>value = [124, 11]<br/>class = No Diabetes>, fillcolor="#e78c4b"] ;
+5 -> 6 ;
+7 [label=<gini = 0.423<br/>samples = 23<br/>value = [7, 16]<br/>class = Diabetes>, fillcolor="#90c8f0"] ;
+5 -> 7 ;
+8 [label=<one_hot__polydipsia_Yes &le; 0.5<br/>gini = 0.127<br/>samples = 206<br/>value = [14, 192]<br/>class = Diabetes>, fillcolor="#47a4e7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<one_hot__itching_Yes &le; 0.5<br/>gini = 0.389<br/>samples = 53<br/>value = [14, 39]<br/>class = Diabetes>, fillcolor="#80c0ee"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 24<br/>value = [0, 24]<br/>class = Diabetes>, fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label=<gini = 0.499<br/>samples = 29<br/>value = [14, 15]<br/>class = Diabetes>, fillcolor="#f2f8fd"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 153<br/>value = [0, 153]<br/>class = Diabetes>, fillcolor="#399de5"] ;
+8 -> 12 ;
+}
